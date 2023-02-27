@@ -1,0 +1,38 @@
+Forecasts
+User input db
+risk management graphs
+hedgebot db
+indicator db
+
+Production Assumptions
+
+	- Own Cane Assumptions
+	- Product Mix Assumptions
+
+
+Financial Assumptions
+
+	- Balance Sheet Assumptions
+	- SGA Assumptions
+	- Indebtness Assumptions
+
+
+Cash Flow Statement Forecasts
+
+	- Cash Flow Statement Forecasts
+
+Income Statement & KPI Forecasts
+
+	- Income Statement Forecasts
+	- KPI Forecasts
+
+Market Assumptions
+
+	- Price Assumptions
+	- Production Cost Assumptions
+	
+
+Balance Sheet Forecasts
+
+	- Asset Forecasts
+	-
