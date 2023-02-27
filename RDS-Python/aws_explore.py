@@ -16,7 +16,7 @@ import numpy as np
 from textblob import TextBlob
 import re
 import matplotlib.pyplot as plt
-import seaborn as sns
+
 
 import warnings
 warnings.filterwarnings('ignore')
@@ -747,7 +747,7 @@ def main11():
 
 def update_market_data():
 
-    new_data_df = pd.read_csv("C:\\Users\\ChristopherTHOMPSON\\Desktop\\Market Prices\\Daily_Update_new.csv", low_memory = False, index_col=False)
+    new_data_df = pd.read_csv("C:\\Users\\Chris\\Documents\\AlmaStone Workspace\\Market Prices\\Daily_Update_new_test.csv", low_memory = False, index_col=False)
     new_data_df['Date'] = pd.to_datetime(new_data_df['Date'])
     new_data_df['Value'] = new_data_df['Value'].astype('float64')
     db = pymysql.connect(host = 'database-1.c8dbzf9wtrjo.us-east-2.rds.amazonaws.com', user = 'admin', password = 'Ktr321ugh!')
