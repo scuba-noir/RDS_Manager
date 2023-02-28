@@ -747,7 +747,7 @@ def main11():
 
 def update_market_data():
 
-    new_data_df = pd.read_csv("C:\\Users\\Chris\\Documents\\AlmaStone Workspace\\Market Prices\\Daily_Update_new_test.csv", low_memory = False, index_col=False)
+    new_data_df = pd.read_csv("C:\\Users\\Chris\\Documents\\AlmaStone Workspace\\Market Prices\\Daily_Update_230228.csv", low_memory = False, index_col=False)
     new_data_df['Date'] = pd.to_datetime(new_data_df['Date'])
     new_data_df['Value'] = new_data_df['Value'].astype('float64')
     db = pymysql.connect(host = 'database-1.c8dbzf9wtrjo.us-east-2.rds.amazonaws.com', user = 'admin', password = 'Ktr321ugh!')
@@ -766,8 +766,7 @@ def update_market_data():
         '''
 
     data_df = pd.read_sql(sql = sql, con = db)
-    #new_data_df.columns = ['Ticker', 'Description', 'Origin', 'Dashboard', 'Units', 'Frequency', 'Value', 'Date', 'Most_recent']
-    #data_df = new_data_df.loc[new_data_df['Ticker'] == 'BASMSBSO Index']
+    
     counter = 0
     length = data_df.shape[0]
     for rows, items in data_df.iterrows():
